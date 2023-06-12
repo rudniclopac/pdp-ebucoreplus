@@ -57,7 +57,7 @@ def get_class_properties(graph, class_iri, parent_iri=None):
 
 
 # Specify ontology file path and class IRI
-# Attention: The OWL-File need to be formatted as XML-RDF for this script!
+# Attention: The OWL-File needs to be formatted as XML-RDF for this script!
 ontology_path = "ebucoreplus_xml-rdf.owl"
 class_iri = 'http://www.ebu.ch/metadata/ontologies/ebucoreplus#Brand'
 
