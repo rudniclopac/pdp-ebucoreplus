@@ -1,3 +1,5 @@
+# PDPCore
+#### Stand: 21.07.2023
 ```mermaid
 classDiagram
 class PublicationService {
@@ -48,7 +50,7 @@ class Campaign {
 class PublicationPlan {
     publicationChannel: PublicationChannel
     schedules: PublicationSchedule
-    exclusions: array of datetime-string
+    exclusions: array of datetime
 }
  
 class PublicationSchedule {
@@ -57,9 +59,9 @@ class PublicationSchedule {
     byMonthDay: integer
     byMonthWeek: integer
     duration: integer
-    startDate: date-string
-    startTime: datetime-string
-    endDate: datetime-string
+    startDate: date
+    startTime: datetime
+    endDate: datetime
     repeatFrequency: RepeatFrequency
     isFirstShowing: boolean
 }
@@ -103,8 +105,8 @@ class URL {
 }
  
 class PublicationEvent {
-    publicationStart: datetime-string
-    publicationEnd: datetime-string
+    publicationStart: datetime
+    publicationEnd: datetime
     publicationChannel: PublicationChannel
 }
  
